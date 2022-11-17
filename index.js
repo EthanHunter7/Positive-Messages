@@ -14,10 +14,14 @@ const messages = [
 
 ];
 
+const positiveButton = document.getElementById('positive-button');
 
 const randomMessage = arr => {
     const randomMessageOfTheDay = Math.floor(Math.random() * arr.length)
-    console.log(`Your Positve Message Of The Day Is: ${messages[randomMessageOfTheDay]}`)
+        return (`Your Positve Message Of The Day Is: ${arr[randomMessageOfTheDay]}`)
 };
 
-randomMessage(messages);
+            positiveButton.addEventListener('click', function () {
+
+                document.getElementById('positive-text').innerHTML = randomMessage(messages);
+        });
