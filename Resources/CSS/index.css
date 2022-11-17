@@ -1,0 +1,110 @@
+/*Page Styling*/
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "Comfortaa";
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Images/1920x1280/pexels-magda-ehlers-2114014\ \(5\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*Header Styling*/
+.header{
+    text-align: center;
+    margin: 250px 0 150px;
+    line-height: 2;
+}
+
+.header h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.header h3{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/*Button Styling*/
+.positive-content{
+    text-align: center;
+}
+
+.positive-content h4{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.positive-button{
+    font-family: "Comfortaa";
+    font-size: 2rem;
+    font-weight: 600;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #b5b5b5;
+    margin-bottom: 140px;
+}
+
+.positive-button:hover{
+    background-color: #525252;
+}
+
+
+/*Output Styling*/
+.positive-text{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 2560px){
+    body{
+        background-image: url(../Images/2560x1440/pexels-magda-ehlers-2114014\ \(1\).jpg);        
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background-image: url(../Images/1280x853/pexels-magda-ehlers-2114014\ \(6\).jpg);
+    }
+
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .header h3 {
+        font-size: 1.6rem;
+    }
+
+    .positive-content h4 {
+        font-size: 2rem;
+    }
+    
+    .positive-text {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .header h1 {
+        font-size: 3.2rem;
+    }
+
+    .header h3 {
+        font-size: 1.3rem;
+    }
+
+    .positive-content h4 {
+        font-size: 1.8rem;
+    }
+    
+    .positive-text {
+        font-size: 2rem;
+    }
+}
